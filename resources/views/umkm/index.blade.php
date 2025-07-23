@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'UMKM - Nagari Silungkang Oso')
-@section('description', 'Daftar Usaha Mikro Kecil dan Menengah (UMKM) di Nagari Silungkang Oso, Kecamatan Silungkang,
+@section('title', 'UMKM - Desa Silungkang Oso')
+@section('description', 'Daftar Usaha Mikro Kecil dan Menengah (UMKM) di Desa Silungkang Oso, Kecamatan Silungkang,
     Kota Sawahlunto.')
 
 @section('content')
@@ -9,8 +9,8 @@
     <section class="bg-gradient-to-r from-yellow-500 to-orange-600 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="text-4xl font-bold mb-4">UMKM Nagari Silungkang Oso</h1>
-                <p class="text-xl text-yellow-100">Usaha Mikro, Kecil, dan Menengah yang menggerakkan ekonomi nagari</p>
+                <h1 class="text-4xl font-bold mb-4">UMKM Desa Silungkang Oso</h1>
+                <p class="text-xl text-yellow-100">Usaha Mikro, Kecil, dan Menengah yang menggerakkan ekonomi desa</p>
             </div>
         </div>
     </section>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Data Penduduk - Nagari Silungkang Oso')
-@section('description', 'Data kependudukan Nagari Silungkang Oso, Kecamatan Silungkang, Kota Sawahlunto, Sumatera
+@section('title', 'Data Penduduk - Desa Silungkang Oso')
+@section('description', 'Data kependudukan Desa Silungkang Oso, Kecamatan Silungkang, Kota Sawahlunto, Sumatera
     Barat.')
 
 @section('content')
@@ -10,7 +10,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="text-4xl font-bold mb-4">Data Penduduk</h1>
-                <p class="text-xl text-blue-100">Informasi kependudukan Nagari Silungkang Oso</p>
+                <p class="text-xl text-blue-100">Informasi kependudukan Desa Silungkang Oso</p>
             </div>
         </div>
     </section>

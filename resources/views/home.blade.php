@@ -1,9 +1,9 @@
 <!-- resources/views/home.blade.php -->
 @extends('layouts.app')
 
-@section('title', 'Beranda - Nagari Silungkang Oso')
+@section('title', 'Beranda - Desa Silungkang Oso')
 @section('description',
-    'Website resmi Nagari Silungkang Oso, Kecamatan Silungkang, Kota Sawahlunto, Sumatera Barat.
+    'Website resmi Desa Silungkang Oso, Kecamatan Silungkang, Kota Sawahlunto, Sumatera Barat.
     Informasi terbaru seputar berita, UMKM, wisata, dan pelayanan masyarakat.')
 
     @push('head')
@@ -35,20 +35,20 @@
     <!-- Hero Banner -->
     <section class="relative h-[600px] overflow-hidden">
         <div class="absolute inset-0">
-            <img src="{{ asset('images/hero-banner.jpg') }}" alt="Nagari Silungkang Oso" class="w-full h-full object-cover">
+            <img src="{{ asset('images/hero-banner.jpg') }}" alt="Desa Silungkang Oso" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
         </div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
             <div class="text-white max-w-2xl">
-                <h1 class="text-5xl font-bold mb-6">Selamat Datang di <span class="text-blue-300">Nagari Silungkang
+                <h1 class="text-5xl font-bold mb-6">Selamat Datang di <span class="text-blue-300">Desa Silungkang
                         Oso</span></h1>
-                <p class="text-xl mb-8 leading-relaxed">Nagari yang maju, mandiri, dan sejahtera dengan kekayaan budaya
+                <p class="text-xl mb-8 leading-relaxed">Desa yang maju, mandiri, dan sejahtera dengan kekayaan budaya
                     Minangkabau di Kota Sawahlunto, Sumatera Barat.</p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('profile') }}"
                         class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300 text-center">
-                        Profil Nagari
+                        Profil Desa
                     </a>
                     <a href="{{ route('tourism') }}"
                         class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-colors duration-300 text-center">
@@ -60,7 +60,7 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div class="text-center">
@@ -89,8 +89,8 @@
                 </div>
 
                 <div class="text-center">
-                    <div class="bg-yellow-100 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                        <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="bg-orange-100 rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
                             </path>
@@ -121,7 +121,7 @@
     <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Lokasi Nagari Silungkang Oso</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Lokasi Desa Silungkang Oso</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Terletak di Kecamatan Silungkang, Kota Sawahlunto, dengan akses
                     mudah dan pemandangan alam yang indah</p>
             </div>
@@ -199,12 +199,12 @@
     </section>
 
     <!-- Latest News -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-blue-600 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Berita Terkini</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Informasi dan berita terbaru seputar kegiatan dan perkembangan
-                    Nagari Silungkang Oso</p>
+                <h2 class="text-3xl font-bold mb-4">Berita Terkini</h2>
+                <p class="text-blue-100 max-w-2xl mx-auto">Informasi dan berita terbaru seputar kegiatan dan perkembangan
+                    Desa Silungkang Oso</p>
             </div>
 
             @if ($featuredArticles && $featuredArticles->count() > 0)
@@ -249,13 +249,13 @@
                 </div>
             @else
                 <div class="text-center py-8">
-                    <p class="text-gray-500">Belum ada artikel yang dipublikasikan.</p>
+                    <p class="text-blue-100">Belum ada artikel yang dipublikasikan.</p>
                 </div>
             @endif
 
             <div class="text-center">
                 <a href="{{ route('articles.index') }}"
-                    class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                    class="inline-flex items-center px-6 py-3 bg-white text-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-300 font-semibold">
                     Lihat Semua Berita
                     <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -270,23 +270,35 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 <!-- UMKM Section -->
-                <div>
+                <div class="bg-orange-50 p-8 rounded-lg border border-orange-200">
                     <div class="mb-8">
-                        <h2 class="text-3xl font-bold text-gray-900 mb-4">UMKM Unggulan</h2>
-                        <p class="text-gray-600">Produk dan usaha terbaik dari masyarakat Nagari Silungkang Oso</p>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-orange-500 p-3 rounded-lg mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h2 class="text-3xl font-bold text-orange-800">UMKM Unggulan</h2>
+                        </div>
+                        <p class="text-orange-600">Produk dan usaha terbaik dari masyarakat Desa Silungkang Oso</p>
                     </div>
 
                     @if ($featuredUMKM && $featuredUMKM->count() > 0)
                         <div class="space-y-6">
                             @foreach ($featuredUMKM as $umkm)
-                                <div class="flex bg-white rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                                <div
+                                    class="flex bg-white rounded-lg p-4 hover:shadow-md transition-shadow duration-300 border border-orange-100">
                                     <div class="flex-shrink-0 mr-4">
                                         @if ($umkm->image)
                                             <img src="{{ Storage::url($umkm->image) }}" alt="{{ $umkm->name }}"
                                                 class="w-16 h-16 rounded-lg object-cover">
                                         @else
-                                            <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-                                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor"
+                                            <div
+                                                class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center">
+                                                <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor"
                                                     viewBox="0 0 24 24">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                         d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
@@ -301,7 +313,7 @@
                                         <p class="text-sm text-gray-500 line-clamp-2">
                                             {{ Str::limit($umkm->description, 80) }}</p>
                                         <span
-                                            class="inline-block mt-2 text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                                            class="inline-block mt-2 text-xs bg-orange-100 text-orange-800 px-2 py-1 rounded">
                                             {{ $umkm->category }}
                                         </span>
                                     </div>
@@ -310,13 +322,13 @@
                         </div>
                     @else
                         <div class="text-center py-8">
-                            <p class="text-gray-500">Belum ada data UMKM unggulan.</p>
+                            <p class="text-orange-500">Belum ada data UMKM unggulan.</p>
                         </div>
                     @endif
 
                     <div class="mt-8">
                         <a href="{{ route('umkm') }}"
-                            class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium">
+                            class="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium">
                             Lihat Semua UMKM
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
@@ -327,16 +339,29 @@
                 </div>
 
                 <!-- Tourism Section -->
-                <div>
+                <div class="bg-green-50 p-8 rounded-lg border border-green-200">
                     <div class="mb-8">
-                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Wisata Unggulan</h2>
-                        <p class="text-gray-600">Destinasi wisata menarik di Nagari Silungkang Oso</p>
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-500 p-3 rounded-lg mr-4">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-3xl font-bold text-green-800">Wisata Unggulan</h2>
+                        </div>
+                        <p class="text-green-600">Destinasi wisata menarik di Desa Silungkang Oso</p>
                     </div>
 
                     @if ($featuredTourism && $featuredTourism->count() > 0)
                         <div class="space-y-6">
                             @foreach ($featuredTourism as $tourism)
-                                <div class="flex bg-white rounded-lg p-4 hover:shadow-md transition-shadow duration-300">
+                                <div
+                                    class="flex bg-white rounded-lg p-4 hover:shadow-md transition-shadow duration-300 border border-green-100">
                                     <div class="flex-shrink-0 mr-4">
                                         @if ($tourism->image)
                                             <img src="{{ Storage::url($tourism->image) }}" alt="{{ $tourism->name }}"
@@ -370,7 +395,7 @@
                         </div>
                     @else
                         <div class="text-center py-8">
-                            <p class="text-gray-500">Belum ada data wisata unggulan.</p>
+                            <p class="text-green-500">Belum ada data wisata unggulan.</p>
                         </div>
                     @endif
 
@@ -448,7 +473,7 @@
                         </svg>
                     </div>
                     <h3 class="font-semibold text-gray-900 mb-2">Berita & Informasi</h3>
-                    <p class="text-sm text-gray-600">Informasi terbaru dari nagari</p>
+                    <p class="text-sm text-gray-600">Informasi terbaru dari desa</p>
                 </a>
 
                 <a href="{{ route('population.index') }}"
@@ -462,7 +487,7 @@
                         </svg>
                     </div>
                     <h3 class="font-semibold text-gray-900 mb-2">Data Penduduk</h3>
-                    <p class="text-sm text-gray-600">Informasi kependudukan nagari</p>
+                    <p class="text-sm text-gray-600">Informasi kependudukan desa</p>
                 </a>
 
                 <a href="{{ route('umkm') }}"
@@ -475,7 +500,7 @@
                             </path>
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-gray-900 mb-2">UMKM Nagari</h3>
+                    <h3 class="font-semibold text-gray-900 mb-2">UMKM Desa</h3>
                     <p class="text-sm text-gray-600">Usaha mikro kecil menengah</p>
                 </a>
 
@@ -491,7 +516,7 @@
                                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Peta Nagari</h3>
+                    <h3 class="font-semibold text-gray-900 mb-2">Peta Desa</h3>
                     <p class="text-sm text-gray-600">Lihat peta dan lokasi penting</p>
                 </a>
             </div>
@@ -524,18 +549,18 @@
                     })
                     .addTo(homeMap)
                     .bindPopup(
-                        '<div class="p-3"><h3 class="font-bold text-lg">Nagari Silungkang Oso</h3><p class="text-sm text-gray-600">Kec. Silungkang, Kota Sawahlunto</p></div>'
+                        '<div class="p-3"><h3 class="font-bold text-lg">Desa Silungkang Oso</h3><p class="text-sm text-gray-600">Kec. Silungkang, Kota Sawahlunto</p></div>'
                     );
 
                 // Add area boundary
-                const nagariArea = [
+                const desaArea = [
                     [-0.6800, 100.7750],
                     [-0.6800, 100.7900],
                     [-0.6650, 100.7900],
                     [-0.6650, 100.7750]
                 ];
 
-                L.polygon(nagariArea, {
+                L.polygon(desaArea, {
                     color: '#10b981',
                     weight: 2,
                     opacity: 0.8,

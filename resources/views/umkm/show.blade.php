@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $umkm->name . ' - UMKM Nagari Silungkang Oso')
+@section('title', $umkm->name . ' - UMKM Desa Silungkang Oso')
 @section('description', 'Detail ' . $umkm->name . ' - ' . $umkm->description)
 
 @section('content')

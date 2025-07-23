@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Edit Foto - Admin Nagari Silungkang Oso')
+@section('title', 'Edit Foto - Admin Desa Silungkang Oso')
 
 @section('content')
     <div class="min-h-screen bg-gray-100">

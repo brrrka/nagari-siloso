@@ -6,11 +6,11 @@
 
 @section('content')
     <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-teal-600 to-cyan-700 text-white py-16">
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="text-4xl font-bold mb-4">Struktur Organisasi</h1>
-                <p class="text-xl text-teal-100">Pemerintahan Nagari Silungkang Oso</p>
+                <p class="text-xl text-blue-100">Pemerintahan Nagari Silungkang Oso</p>
             </div>
         </div>
     </section>
@@ -18,62 +18,84 @@
     <!-- Content Section -->
     <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Wali Nagari -->
+
+            <!-- Level 1: Wali Nagari (Gubernur Ferdinal) -->
             <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">Kepala Pemerintahan</h2>
                 <div
-                    class="bg-white rounded-2xl shadow-xl p-8 max-w-md mx-auto hover:shadow-2xl transition-shadow duration-300">
-                    <div class="relative mb-6">
+                    class="bg-white rounded-3xl shadow-2xl p-12 max-w-lg mx-auto border-4 border-blue-200 hover:shadow-3xl transition-all duration-300">
+                    <div class="relative mb-8">
                         <div
-                            class="w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
-                            <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            class="w-40 h-40 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full mx-auto mb-6 flex items-center justify-center shadow-2xl relative">
+                            <svg class="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                             </svg>
-                        </div>
-                        <div class="absolute -top-2 -right-2 bg-yellow-400 rounded-full p-2">
-                            <svg class="w-6 h-6 text-yellow-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3l14 9-14 9V3z">
-                                </path>
-                            </svg>
+                            <!-- Crown Icon -->
+                            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                                <svg class="w-12 h-12 text-yellow-400" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M5 16L3 3l5.5 2L12 2l3.5 3L21 3l-2 13H5zm2.7-2h8.6l.9-5.4-2.1.8L12 8l-3.1 1.4-2.1-.8L7.7 14z" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Bapak Suryadi, S.Sos</h3>
-                    <p class="text-blue-600 font-bold text-lg mb-2">Wali Nagari</p>
-                    <p class="text-sm text-gray-600 mb-4">Periode 2022-2028</p>
-                    <div class="bg-blue-50 rounded-lg p-3">
-                        <p class="text-xs text-blue-800 font-medium">Pemimpin tertinggi pemerintahan nagari</p>
+                    <h3 class="text-4xl font-bold text-blue-800 mb-3">FERDINAL</h3>
+                    <div class="bg-gradient-to-r from-blue-100 to-blue-200 rounded-xl p-4 mb-4">
+                        <p class="text-xl font-bold text-blue-900">WALI NAGARI</p>
+                        <p class="text-sm text-blue-700">(Gubernur)</p>
+                    </div>
+                    <div class="bg-yellow-50 rounded-lg p-3 border border-yellow-200">
+                        <p class="text-sm text-yellow-800 font-semibold">Pemimpin Tertinggi Pemerintahan Nagari</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Perangkat Nagari -->
+            <!-- BPN (Simplified) -->
+            <div class="text-center mb-12">
+                <div class="bg-white rounded-xl shadow-md p-6 max-w-md mx-auto border border-gray-200">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-1">BPN</h3>
+                    <p class="text-sm text-gray-500">Badan Permusyawaratan Nagari</p>
+                </div>
+            </div>
+
+            <!-- Level 2: Sekretaris Desa -->
+            <div class="text-center mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-8">Sekretariat</h2>
+                <div
+                    class="bg-white rounded-2xl shadow-xl p-8 max-w-md mx-auto border-2 border-green-200 hover:shadow-2xl transition-all duration-300">
+                    <div
+                        class="w-32 h-32 bg-gradient-to-br from-green-400 to-green-600 rounded-full mx-auto mb-6 flex items-center justify-center shadow-xl">
+                        <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-green-800 mb-2">SABRON, S.SOS</h3>
+                    <div class="bg-green-100 rounded-lg p-3 mb-4">
+                        <p class="text-lg font-bold text-green-800">SEKRETARIS DESA</p>
+                    </div>
+                    <p class="text-sm text-gray-600">Koordinator Administrasi Pemerintahan</p>
+                </div>
+            </div>
+
+            <!-- Level 3: Kepala Seksi & Kepala Urusan -->
             <div class="mb-16">
-                <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Perangkat Nagari</h2>
-                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Tim kerja yang mendukung pelaksanaan
-                    pemerintahan dan pelayanan masyarakat</p>
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Perangkat Desa</h2>
+                <p class="text-center text-gray-600 mb-12">Kepala Seksi (KASI) dan Kepala Urusan (KAUR)</p>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Sekretaris Nagari -->
-                    <div
-                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                        <div
-                            class="w-24 h-24 bg-gradient-to-br from-green-100 to-green-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
-                            <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Ibu Sari Dewi, S.Pd</h3>
-                        <p class="text-green-600 font-semibold mb-3">Sekretaris Nagari</p>
-                        <div class="bg-green-50 rounded-lg p-3">
-                            <p class="text-xs text-green-800">Koordinator administrasi dan dokumentasi</p>
-                        </div>
-                    </div>
 
-                    <!-- Kaur Pemerintahan -->
+                    <!-- Kasi Pemerintahan -->
                     <div
-                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-blue-500">
                         <div
                             class="w-24 h-24 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
                             <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,34 +104,16 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Bapak Ahmad Yani</h3>
-                        <p class="text-blue-600 font-semibold mb-3">Kaur Pemerintahan</p>
-                        <div class="bg-blue-50 rounded-lg p-3">
-                            <p class="text-xs text-blue-800">Urusan pemerintahan dan trantib</p>
+                        <h3 class="text-lg font-bold text-blue-800 mb-2">KASI PEMERINTAHAN</h3>
+                        <h4 class="text-base font-semibold text-gray-900 mb-3">Bambang Suherman, SE</h4>
+                        <div class="bg-blue-50 rounded-lg p-2">
+                            <p class="text-xs text-blue-700">Urusan Pemerintahan & Trantib</p>
                         </div>
                     </div>
 
-                    <!-- Kaur Pembangunan -->
+                    <!-- Kasi Kesejahteraan -->
                     <div
-                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                        <div
-                            class="w-24 h-24 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
-                            <svg class="w-12 h-12 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Bapak Rizal Efendi, ST</h3>
-                        <p class="text-yellow-600 font-semibold mb-3">Kaur Pembangunan</p>
-                        <div class="bg-yellow-50 rounded-lg p-3">
-                            <p class="text-xs text-yellow-800">Infrastruktur dan pembangunan</p>
-                        </div>
-                    </div>
-
-                    <!-- Kaur Kesejahteraan -->
-                    <div
-                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-purple-500">
                         <div
                             class="w-24 h-24 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
                             <svg class="w-12 h-12 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,185 +122,309 @@
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Ibu Fitri Handayani</h3>
-                        <p class="text-purple-600 font-semibold mb-3">Kaur Kesejahteraan</p>
-                        <div class="bg-purple-50 rounded-lg p-3">
-                            <p class="text-xs text-purple-800">Kesehatan dan sosial masyarakat</p>
+                        <h3 class="text-lg font-bold text-purple-800 mb-2">KASI KESEJAHTERAAN</h3>
+                        <h4 class="text-base font-semibold text-gray-900 mb-3">Risko Muhammad, A.md</h4>
+                        <div class="bg-purple-50 rounded-lg p-2">
+                            <p class="text-xs text-purple-700">Kesehatan & Sosial Masyarakat</p>
+                        </div>
+                    </div>
+
+                    <!-- Kasi Pelayanan -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-green-500">
+                        <div
+                            class="w-24 h-24 bg-gradient-to-br from-green-100 to-green-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
+                            <svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-green-800 mb-2">KASI PELAYANAN</h3>
+                        <h4 class="text-base font-semibold text-gray-900 mb-3">Imron Abadi</h4>
+                        <div class="bg-green-50 rounded-lg p-2">
+                            <p class="text-xs text-green-700">Pelayanan Masyarakat</p>
+                        </div>
+                    </div>
+
+                    <!-- Kaur TU & UMKR -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-yellow-500">
+                        <div
+                            class="w-24 h-24 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
+                            <svg class="w-12 h-12 text-yellow-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-yellow-800 mb-2">KAUR TU & UMKR</h3>
+                        <h4 class="text-base font-semibold text-gray-900 mb-3">Yulniati</h4>
+                        <div class="bg-yellow-50 rounded-lg p-2">
+                            <p class="text-xs text-yellow-700">Tata Usaha & Umum</p>
                         </div>
                     </div>
 
                     <!-- Kaur Keuangan -->
                     <div
-                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-red-500">
                         <div
                             class="w-24 h-24 bg-gradient-to-br from-red-100 to-red-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
-                            <svg class="w-12 h-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-12 h-12 text-red-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Bapak Dedi Syahputra</h3>
-                        <p class="text-red-600 font-semibold mb-3">Kaur Keuangan</p>
-                        <div class="bg-red-50 rounded-lg p-3">
-                            <p class="text-xs text-red-800">Pengelolaan keuangan nagari</p>
+                        <h3 class="text-lg font-bold text-red-800 mb-2">KAUR KEUANGAN</h3>
+                        <h4 class="text-base font-semibold text-gray-900 mb-3">Sri Wahyuni .Y, A.Md</h4>
+                        <div class="bg-red-50 rounded-lg p-2">
+                            <p class="text-xs text-red-700">Pengelolaan Keuangan</p>
                         </div>
                     </div>
 
-                    <!-- Kaur Umum -->
+                    <!-- Kaur Perencanaan -->
                     <div
-                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-indigo-500">
                         <div
                             class="w-24 h-24 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
                             <svg class="w-12 h-12 text-indigo-600" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V3.5a2.5 2.5 0 00-5 0V6m5 0a3 3 0 013 3v7a3 3 0 01-3 3H8a3 3 0 01-3-3V9a3 3 0 013-3h0">
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z">
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Ibu Rina Marlina</h3>
-                        <p class="text-indigo-600 font-semibold mb-3">Kaur Umum</p>
-                        <div class="bg-indigo-50 rounded-lg p-3">
-                            <p class="text-xs text-indigo-800">Urusan umum dan perlengkapan</p>
+                        <h3 class="text-lg font-bold text-indigo-800 mb-2">KAUR PERENCANAAN</h3>
+                        <h4 class="text-base font-semibold text-gray-900 mb-3">Meri Susanti, SE</h4>
+                        <div class="bg-indigo-50 rounded-lg p-2">
+                            <p class="text-xs text-indigo-700">Perencanaan Pembangunan</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Badan Permusyawaratan Nagari -->
+            <!-- Level 4: Staff -->
             <div class="mb-16">
-                <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Badan Permusyawaratan Nagari (BPN)</h2>
-                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Lembaga legislatif yang mengawasi dan
-                    mendampingi pemerintahan nagari</p>
+                <h2 class="text-2xl font-bold text-center text-gray-900 mb-8">Staff Pendukung</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Ketua BPN -->
-                    <div
-                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                        <div
-                            class="w-28 h-28 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
-                            <svg class="w-14 h-14 text-orange-600" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
+                    <div class="bg-gray-100 rounded-lg p-4 text-center hover:bg-gray-200 transition-colors duration-300">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Bapak H. Sofyan</h3>
-                        <p class="text-lg text-gray-600 mb-1">Datuak Rajo</p>
-                        <p class="text-orange-600 font-semibold mb-3">Ketua BPN</p>
-                        <div class="bg-orange-50 rounded-lg p-3">
-                            <p class="text-xs text-orange-800 font-medium">Memimpin sidang dan koordinasi BPN</p>
+                        <p class="text-sm font-medium text-gray-700">Staff</p>
+                        <p class="text-xs text-gray-500">Kosong</p>
+                    </div>
+
+                    <div
+                        class="bg-blue-50 rounded-lg p-4 text-center hover:bg-blue-100 transition-colors duration-300 border border-blue-200">
+                        <div class="w-12 h-12 bg-blue-200 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <p class="text-sm font-medium text-blue-700">Staff</p>
+                        <p class="text-xs text-blue-600">Rival Kharisma, S.Kom</p>
+                    </div>
+
+                    <div class="bg-gray-100 rounded-lg p-4 text-center hover:bg-gray-200 transition-colors duration-300">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <p class="text-sm font-medium text-gray-700">Staff</p>
+                        <p class="text-xs text-gray-500">Kosong</p>
+                    </div>
+
+                    <div
+                        class="bg-green-50 rounded-lg p-4 text-center hover:bg-green-100 transition-colors duration-300 border border-green-200">
+                        <div class="w-12 h-12 bg-green-200 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <p class="text-sm font-medium text-green-700">Staff</p>
+                        <p class="text-xs text-green-600">Riko Alfiando</p>
+                    </div>
+
+                    <div
+                        class="bg-purple-50 rounded-lg p-4 text-center hover:bg-purple-100 transition-colors duration-300 border border-purple-200">
+                        <div class="w-12 h-12 bg-purple-200 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <p class="text-sm font-medium text-purple-700">Staff</p>
+                        <p class="text-xs text-purple-600">Rika Yulianti</p>
+                    </div>
+
+                    <div class="bg-gray-100 rounded-lg p-4 text-center hover:bg-gray-200 transition-colors duration-300">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mx-auto mb-2 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <p class="text-sm font-medium text-gray-700">Staff</p>
+                        <p class="text-xs text-gray-500">Kosong</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Level 5: Kepala Desa per Wilayah -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Kepala Desa per Wilayah</h2>
+                <p class="text-center text-gray-600 mb-12">Pemimpin di tingkat wilayah/jorong</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Kades Lembah Galendo -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-blue-500">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
+                            <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-blue-800 mb-2">LEMBAH GALENDO</h3>
+                        <h4 class="text-base font-semibold text-gray-900 mb-2">Agung Wijaya</h4>
+                        <div class="bg-blue-50 rounded-lg p-2">
+                            <p class="text-xs text-blue-700 font-medium">Kepala Desa</p>
                         </div>
                     </div>
 
-                    <!-- Wakil Ketua BPN -->
+                    <!-- Kades Lagan Duwur -->
                     <div
-                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-green-500">
                         <div
-                            class="w-28 h-28 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
-                            <svg class="w-14 h-14 text-teal-600" fill="none" stroke="currentColor"
+                            class="w-20 h-20 bg-gradient-to-br from-green-100 to-green-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
+                            <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
-                                </path>
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Bapak Zulkifli, S.Ag</h3>
-                        <p class="text-teal-600 font-semibold mb-3">Wakil Ketua BPN</p>
-                        <div class="bg-teal-50 rounded-lg p-3">
-                            <p class="text-xs text-teal-800 font-medium">Mendampingi ketua dalam menjalankan tugas</p>
+                        <h3 class="text-lg font-bold text-green-800 mb-2">LAGAN DUWUR</h3>
+                        <h4 class="text-base font-semibold text-gray-900 mb-2">ANDRI</h4>
+                        <div class="bg-green-50 rounded-lg p-2">
+                            <p class="text-xs text-green-700 font-medium">Kepala Desa</p>
                         </div>
                     </div>
 
-                    <!-- Sekretaris BPN -->
+                    <!-- Kades Singkarak -->
                     <div
-                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-gray-400">
                         <div
-                            class="w-28 h-28 bg-gradient-to-br from-pink-100 to-pink-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
-                            <svg class="w-14 h-14 text-pink-600" fill="none" stroke="currentColor"
+                            class="w-20 h-20 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
+                            <svg class="w-10 h-10 text-gray-500" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
-                                </path>
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-1">Ibu Yuliana, S.Pd</h3>
-                        <p class="text-pink-600 font-semibold mb-3">Sekretaris BPN</p>
-                        <div class="bg-pink-50 rounded-lg p-3">
-                            <p class="text-xs text-pink-800 font-medium">Administrasi dan dokumentasi BPN</p>
+                        <h3 class="text-lg font-bold text-gray-600 mb-2">SINGKARAK</h3>
+                        <h4 class="text-base font-semibold text-gray-500 mb-2">Kosong</h4>
+                        <div class="bg-gray-50 rounded-lg p-2">
+                            <p class="text-xs text-gray-500 font-medium">Posisi Lowong</p>
+                        </div>
+                    </div>
+
+                    <!-- Kades Sungai Kalau -->
+                    <div
+                        class="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-yellow-500">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-full mx-auto mb-4 flex items-center justify-center shadow-md">
+                            <svg class="w-10 h-10 text-yellow-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-yellow-800 mb-2">SUNGAI KALAU</h3>
+                        <h4 class="text-base font-semibold text-gray-900 mb-2">Ade Erfan F</h4>
+                        <div class="bg-yellow-50 rounded-lg p-2">
+                            <p class="text-xs text-yellow-700 font-medium">Kepala Desa</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Tugas dan Fungsi -->
-            <div class="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl p-8 lg:p-12">
-                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Tugas dan Fungsi Organisasi</h2>
+            <!-- Organizational Chart Flow -->
+            <div class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 lg:p-12 mb-16">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Alur Organisasi</h2>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Wali Nagari -->
-                    <div class="bg-white rounded-xl p-6 shadow-md">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M5 3l14 9-14 9V3z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900">Wali Nagari</h3>
+                <div class="flex flex-col items-center space-y-8">
+                    <!-- Flow Level 1 -->
+                    <div class="flex items-center justify-center space-x-8">
+                        <div class="bg-white rounded-lg p-4 shadow-md border-2 border-blue-300">
+                            <p class="text-sm font-bold text-blue-800">WALI NAGARI</p>
+                            <p class="text-xs text-blue-600">Ferdinal</p>
                         </div>
-                        <ul class="space-y-2 text-sm text-gray-700">
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span>Memimpin penyelenggaraan pemerintahan nagari</span>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span>Mengkoordinasikan kegiatan pembangunan</span>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span>Memberikan pelayanan kepada masyarakat</span>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span>Membina ketentraman dan ketertiban</span>
-                            </li>
-                        </ul>
+                        <div class="text-gray-400">↔</div>
+                        <div class="bg-white rounded-lg p-4 shadow-md border border-gray-300">
+                            <p class="text-sm font-bold text-gray-700">BPN</p>
+                            <p class="text-xs text-gray-500">Pengawas</p>
+                        </div>
                     </div>
 
-                    <!-- BPN -->
-                    <div class="bg-white rounded-xl p-6 shadow-md">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
-                                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900">BPN</h3>
+                    <!-- Arrow Down -->
+                    <div class="text-blue-500">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Flow Level 2 -->
+                    <div class="bg-white rounded-lg p-4 shadow-md border-2 border-green-300">
+                        <p class="text-sm font-bold text-green-800">SEKRETARIS DESA</p>
+                        <p class="text-xs text-green-600">Sabron, S.SOS</p>
+                    </div>
+
+                    <!-- Arrow Down -->
+                    <div class="text-blue-500">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Flow Level 3 -->
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="bg-white rounded-lg p-3 shadow-md border border-blue-200 text-center">
+                            <p class="text-xs font-bold text-blue-700">KASI PEMERINTAHAN</p>
                         </div>
-                        <ul class="space-y-2 text-sm text-gray-700">
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span>Mengawasi kinerja Wali Nagari</span>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span>Menampung aspirasi masyarakat</span>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span>Menyetujui Peraturan Nagari</span>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                                <span>Mengawasi APB Nagari</span>
-                            </li>
-                        </ul>
+                        <div class="bg-white rounded-lg p-3 shadow-md border border-purple-200 text-center">
+                            <p class="text-xs font-bold text-purple-700">KASI KESEJAHTERAAN</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 shadow-md border border-green-200 text-center">
+                            <p class="text-xs font-bold text-green-700">KASI PELAYANAN</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 shadow-md border border-yellow-200 text-center">
+                            <p class="text-xs font-bold text-yellow-700">KAUR TU & UMKR</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 shadow-md border border-red-200 text-center">
+                            <p class="text-xs font-bold text-red-700">KAUR KEUANGAN</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-3 shadow-md border border-indigo-200 text-center">
+                            <p class="text-xs font-bold text-indigo-700">KAUR PERENCANAAN</p>
+                        </div>
                     </div>
                 </div>
             </div>

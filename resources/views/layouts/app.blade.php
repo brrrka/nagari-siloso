@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Nagari Silungkang Oso')</title>
-    <meta name="description" content="@yield('description', 'Website resmi Nagari Silungkang Oso, Kecamatan Silungkang, Kota Sawahlunto, Sumatera Barat')">
+    <title>@yield('title', 'Desa Silungkang Oso')</title>
+    <meta name="description" content="@yield('description', 'Website resmi Desa Silungkang Oso, Kecamatan Silungkang, Kota Sawahlunto, Sumatera Barat')">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -33,7 +33,7 @@
                         <span>✉️ info@silungkangoso.com</span>
                     </div>
                     <div class="flex items-center space-x-2">
-                        <span>🌍 Nagari Silungkang Oso, Sawahlunto</span>
+                        <span>🌍 Desa Silungkang Oso, Sawahlunto</span>
                     </div>
                 </div>
             </div>
@@ -44,10 +44,10 @@
             <div class="flex justify-between items-center py-4">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <img src="{{ asset('images/logo_desa.jpg') }}" alt="Logo Nagari"
+                    <img src="{{ asset('images/logo_desa.jpg') }}" alt="Logo Desa"
                         class="h-12 w-12 object-cover rounded-full">
                     <div>
-                        <h1 class="text-xl font-bold text-gray-900">Nagari Silungkang Oso</h1>
+                        <h1 class="text-xl font-bold text-gray-900">Desa Silungkang Oso</h1>
                         <p class="text-sm text-gray-600">Kec. Silungkang, Kota Sawahlunto</p>
                     </div>
                 </div>
@@ -72,10 +72,10 @@
                         <div
                             class="dropdown-menu opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                             <div class="py-1">
-                                <a href="{{ route('profile') }}" class="dropdown-item">Profil Nagari</a>
+                                <a href="{{ route('profile') }}" class="dropdown-item">Profil Desa</a>
                                 <a href="{{ route('vision-mission') }}" class="dropdown-item">Visi & Misi</a>
                                 <a href="{{ route('organization-structure') }}" class="dropdown-item">Struktur
-                                    Organisasi</a>
+                                    Desa</a>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                             class="dropdown-menu opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                             <div class="py-1">
                                 <a href="{{ route('population.index') }}" class="dropdown-item">Data Penduduk</a>
-                                <a href="{{ route('map') }}" class="dropdown-item">Peta Nagari</a>
+                                <a href="{{ route('map') }}" class="dropdown-item">Peta Desa</a>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                         <div class="text-gray-500 font-medium text-sm mb-2">Profil</div>
                         <div class="space-y-1 ml-4 pl-4 border-l-2 border-gray-200">
                             <a href="{{ route('profile') }}"
-                                class="block py-1 text-sm text-gray-700 hover:text-primary-600">Profil Nagari</a>
+                                class="block py-1 text-sm text-gray-700 hover:text-primary-600">Profil Desa</a>
                             <a href="{{ route('vision-mission') }}"
                                 class="block py-1 text-sm text-gray-700 hover:text-primary-600">Visi & Misi</a>
                             <a href="{{ route('organization-structure') }}"
@@ -176,7 +176,7 @@
                             <a href="{{ route('population.index') }}"
                                 class="block py-1 text-sm text-gray-700 hover:text-primary-600">Data Penduduk</a>
                             <a href="{{ route('map') }}"
-                                class="block py-1 text-sm text-gray-700 hover:text-primary-600">Peta Nagari</a>
+                                class="block py-1 text-sm text-gray-700 hover:text-primary-600">Peta Desa</a>
                         </div>
                     </div>
                 </div>
@@ -245,15 +245,15 @@
                 <!-- About -->
                 <div class="col-span-2">
                     <div class="flex items-center space-x-3 mb-6">
-                        <img src="{{ asset('images/logo_desa.jpg') }}" alt="Logo Nagari"
+                        <img src="{{ asset('images/logo_desa.jpg') }}" alt="Logo Desa"
                             class="h-12 w-12 object-cover rounded-full">
                         <div>
-                            <h3 class="text-lg font-bold">Nagari Silungkang Oso</h3>
+                            <h3 class="text-lg font-bold">Desa Silungkang Oso</h3>
                             <p class="text-gray-400 text-sm">Kec. Silungkang, Kota Sawahlunto</p>
                         </div>
                     </div>
                     <p class="text-gray-300 text-sm leading-relaxed mb-6">
-                        Nagari Silungkang Oso adalah nagari yang berkomitmen untuk kemajuan dan kesejahteraan
+                        Desa Silungkang Oso adalah desa yang berkomitmen untuk kemajuan dan kesejahteraan
                         masyarakatnya melalui pembangunan berkelanjutan dan pelestarian budaya Minangkabau.
                     </p>
                     <div class="space-y-2 text-sm text-gray-300">
@@ -300,7 +300,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M9 5l7 7-7 7"></path>
                                 </svg>
-                                Profil Nagari
+                                Profil Desa
                             </a></li>
                         <li><a href="{{ route('articles.index') }}"
                                 class="text-gray-300 hover:text-white transition-colors duration-200 flex items-center group">
@@ -373,7 +373,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <div class="flex flex-col sm:flex-row justify-between items-center">
                     <div class="text-sm text-gray-400">
-                        © {{ date('Y') }} Nagari Silungkang Oso. All rights reserved.
+                        © {{ date('Y') }} Desa Silungkang Oso. All rights reserved.
                     </div>
                     <div class="flex items-center space-x-3 mt-2 sm:mt-0">
                         <img src="{{ asset('images/logo_kkn.png') }}" alt="Logo KKN" class="h-6 w-6 rounded">

@@ -1,20 +1,12 @@
 <!-- resources/views/gallery/index.blade.php -->
 @extends('layouts.app')
 
-@section('title', 'Galeri - Nagari Silungkang Oso')
-@section('description', 'Galeri foto kegiatan dan dokumentasi Nagari Silungkang Oso, Kecamatan Silungkang, Kota
+@section('title', 'Galeri - Desa Silungkang Oso')
+@section('description',
+    'Galeri foto kegiatan dan dokumentasi Desa Silungkang Oso, Kecamatan Silungkang, Kota
     Sawahlunto.')
 
 @section('content')
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold mb-4">Galeri Nagari Silungkang Oso</h1>
-                <p class="text-xl text-purple-100">Dokumentasi kegiatan dan keindahan nagari kami</p>
-            </div>
-        </div>
-    </section>
 
     <!-- Gallery Section -->
     <section class="py-16 bg-gray-50">

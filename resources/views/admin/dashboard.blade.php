@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Dashboard Admin - Nagari Silungkang Oso')
+@section('title', 'Dashboard Admin - Desa Silungkang Oso')
 
 @section('content')
     <div class="min-h-screen bg-gray-100">
@@ -8,7 +8,7 @@
             <!-- Page Header -->
             <div class="mb-8">
                 <h1 class="text-3xl font-bold text-gray-900">Dashboard Admin</h1>
-                <p class="text-gray-600 mt-2">Selamat datang di panel administrasi Nagari Silungkang Oso</p>
+                <p class="text-gray-600 mt-2">Selamat datang di panel administrasi Desa Silungkang Oso</p>
             </div>
 
             <!-- Stats Cards -->

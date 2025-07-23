@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $article->title . ' - Nagari Silungkang Oso')
+@section('title', $article->title . ' - Desa Silungkang Oso')
 @section('description', $article->excerpt)
 
 @section('content')

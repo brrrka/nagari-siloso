@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Berita & Artikel - Nagari Silungkang Oso')
-@section('description', 'Kumpulan berita dan artikel terbaru dari Nagari Silungkang Oso')
+@section('title', 'Berita & Artikel - Desa Silungkang Oso')
+@section('description', 'Kumpulan berita dan artikel terbaru dari Desa Silungkang Oso')
 
 @section('content')
     <!-- Hero Section -->
@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h1 class="text-4xl font-bold mb-4">Berita & Artikel</h1>
-                <p class="text-xl text-blue-100">Informasi terbaru dari Nagari Silungkang Oso</p>
+                <p class="text-xl text-blue-100">Informasi terbaru dari Desa Silungkang Oso</p>
             </div>
         </div>
     </section>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title', 'Admin - Nagari Silungkang Oso')</title>
+    <title>@yield('title', 'Admin - Desa Silungkang Oso')</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -55,10 +55,6 @@
                             <a href="{{ route('admin.population.index') }}"
                                 class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium {{ request()->routeIs('admin.population.*') ? 'border-blue-500 text-gray-900' : 'border-transparent text-gray-500 hover:text-gray-700' }}">
                                 Data Penduduk
-                            </a>
-                            <a href="{{ route('admin.events.index') }}"
-                                class="inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium {{ request()->routeIs('admin.events.*') ? 'border-blue-500 text-gray-900' : 'border-transparent text-gray-500 hover:text-gray-700' }}">
-                                Event
                             </a>
                         </div>
                     </div>

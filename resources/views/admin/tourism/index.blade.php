@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Kelola Wisata - Admin Nagari Silungkang Oso')
+@section('title', 'Kelola Wisata - Admin Desa Silungkang Oso')
 
 @section('content')
     <div class="min-h-screen bg-gray-100">
@@ -9,7 +9,7 @@
             <div class="mb-8 flex justify-between items-center">
                 <div>
                     <h1 class="text-3xl font-bold text-gray-900">Kelola Wisata</h1>
-                    <p class="text-gray-600 mt-2">Kelola destinasi wisata di nagari</p>
+                    <p class="text-gray-600 mt-2">Kelola destinasi wisata di desa</p>
                 </div>
                 <a href="{{ route('admin.tourism.create') }}" class="btn-primary">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
