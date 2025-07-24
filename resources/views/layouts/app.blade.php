@@ -376,7 +376,7 @@
                         © {{ date('Y') }} Desa Silungkang Oso. All rights reserved.
                     </div>
                     <div class="flex items-center space-x-3 mt-2 sm:mt-0">
-                        <img src="{{ asset('images/logo_kkn.png') }}" alt="Logo KKN" class="h-6 w-6 rounded">
+                        <img src="{{ asset('images/kknoso.png') }}" alt="Logo KKN" class="h-6 w-6 rounded">
                         <span class="text-xs text-gray-500">Website ini dibuat oleh Tim KKN Silungkang Oso 2025</span>
                     </div>
                 </div>

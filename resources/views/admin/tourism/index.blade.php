@@ -39,6 +39,7 @@
                                 <tbody>
                                     @foreach ($tourisms as $tourism)
                                         <tr>
+                                            <!-- Nama Destinasi -->
                                             <td>
                                                 <div class="flex items-center">
                                                     @if ($tourism->image)
@@ -58,8 +59,74 @@
                                                                     stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z">
                                                                 </path>
                                                             </svg>
-                                                            </a>
+                                                        </div>
                                                     @endif
+                                                    <div>
+                                                        <div class="font-medium text-gray-900">{{ $tourism->name }}</div>
+                                                        <div class="text-sm text-gray-500">
+                                                            {{ Str::limit($tourism->description, 50) }}</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                            <!-- Kategori -->
+                                            <td>
+                                                <span
+                                                    class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                                    {{ $tourism->category }}
+                                                </span>
+                                            </td>
+
+                                            <!-- Lokasi -->
+                                            <td>
+                                                <div class="text-sm text-gray-900">{{ $tourism->location }}</div>
+                                            </td>
+
+                                            <!-- Status -->
+                                            <td>
+                                                @if ($tourism->is_featured)
+                                                    <span
+                                                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                                                        <svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                                            <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z">
+                                                            </path>
+                                                        </svg>
+                                                        Unggulan
+                                                    </span>
+                                                @else
+                                                    <span
+                                                        class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                                        Biasa
+                                                    </span>
+                                                @endif
+                                            </td>
+
+                                            <!-- Koordinat -->
+                                            <td>
+                                                @if ($tourism->latitude && $tourism->longitude)
+                                                    <div class="text-xs text-gray-600">
+                                                        <div>{{ number_format($tourism->latitude, 6) }}</div>
+                                                        <div>{{ number_format($tourism->longitude, 6) }}</div>
+                                                    </div>
+                                                @else
+                                                    <span class="text-xs text-gray-400">Tidak ada</span>
+                                                @endif
+                                            </td>
+
+                                            <!-- Dibuat -->
+                                            <td>
+                                                <div class="text-sm text-gray-600">
+                                                    {{ $tourism->created_at->format('d M Y') }}
+                                                </div>
+                                                <div class="text-xs text-gray-400">
+                                                    {{ $tourism->created_at->format('H:i') }}
+                                                </div>
+                                            </td>
+
+                                            <!-- Aksi -->
+                                            <td>
+                                                <div class="flex items-center space-x-2">
                                                     <a href="{{ route('admin.tourism.edit', $tourism) }}"
                                                         class="text-yellow-600 hover:text-yellow-700" title="Edit">
                                                         <svg class="w-4 h-4" fill="none" stroke="currentColor"

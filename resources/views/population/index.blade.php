@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('title', 'Data Penduduk - Desa Silungkang Oso')
-@section('description', 'Data kependudukan Desa Silungkang Oso, Kecamatan Silungkang, Kota Sawahlunto, Sumatera
+@section('description',
+    'Data kependudukan Desa Silungkang Oso, Kecamatan Silungkang, Kota Sawahlunto, Sumatera
     Barat.')
 
 @section('content')
@@ -57,7 +58,7 @@
                 </div>
 
                 <!-- Population Charts -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {{-- <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <!-- Gender Distribution -->
                     <div class="bg-white rounded-lg shadow-lg p-6">
                         <h3 class="text-lg font-semibold text-gray-900 mb-6">Distribusi Berdasarkan Jenis Kelamin</h3>
@@ -139,7 +140,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <!-- Additional Info -->
                 <div class="mt-12 bg-blue-50 rounded-lg p-8">

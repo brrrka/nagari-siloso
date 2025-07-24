@@ -1,8 +1,8 @@
 <!-- resources/views/map/index.blade.php -->
 @extends('layouts.app')
 
-@section('title', 'Peta Nagari - Nagari Silungkang Oso')
-@section('description', 'Peta interaktif Nagari Silungkang Oso dan lokasi-lokasi penting di sekitarnya.')
+@section('title', 'Peta Desa - Desa Silungkang Oso')
+@section('description', 'Peta interaktif Desa Silungkang Oso dan lokasi-lokasi penting di sekitarnya.')
 
 @push('head')
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -28,8 +28,8 @@
     <section class="bg-green-600 text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="text-4xl font-bold mb-4">Peta Nagari Silungkang Oso</h1>
-                <p class="text-xl text-green-100">Eksplorasi lokasi dan tempat penting di nagari kami</p>
+                <h1 class="text-4xl font-bold mb-4">Peta Desa Silungkang Oso</h1>
+                <p class="text-xl text-green-100">Eksplorasi lokasi dan tempat penting di desa kami</p>
             </div>
         </div>
     </section>
@@ -54,7 +54,7 @@
                         <div class="space-y-3">
                             <div class="flex items-center space-x-3">
                                 <div class="w-4 h-4 bg-red-500 rounded-full"></div>
-                                <span class="text-sm text-gray-700">Kantor Nagari</span>
+                                <span class="text-sm text-gray-700">Kantor Desa</span>
                             </div>
                             <div class="flex items-center space-x-3">
                                 <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
@@ -120,7 +120,7 @@
     <section class="py-12 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8">
-                <h2 class="text-2xl font-bold text-gray-900">Akses ke Nagari Silungkang Oso</h2>
+                <h2 class="text-2xl font-bold text-gray-900">Akses ke Desa Silungkang Oso</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -213,8 +213,8 @@
                 })
                 .addTo(map)
                 .bindPopup(
-                    '<div class="p-2"><h3 class="font-bold">Kantor Wali Nagari Silungkang Oso</h3><p class="text-sm text-gray-600">Pusat pemerintahan nagari</p></div>'
-                    );
+                    '<div class="p-2"><h3 class="font-bold">Kantor Wali Nagari Silungkang Oso</h3><p class="text-sm text-gray-600">Pusat pemerintahan desa</p></div>'
+                );
 
             // Sample locations around Silungkang Oso
             const sampleLocations = [{
@@ -268,7 +268,7 @@
                         .addTo(map)
                         .bindPopup(
                             `<div class="p-2"><h3 class="font-bold">${location.name}</h3><p class="text-sm text-gray-600">${location.description}</p></div>`
-                            );
+                        );
                 });
             @endif
 
@@ -280,26 +280,26 @@
                     .addTo(map)
                     .bindPopup(
                         `<div class="p-2"><h3 class="font-bold">${location.name}</h3><p class="text-sm text-gray-600">${location.description}</p></div>`
-                        );
+                    );
             });
 
             // Add area boundary (approximate)
-            const nagariArea = [
+            const desaArea = [
                 [-0.6800, 100.7750],
                 [-0.6800, 100.7900],
                 [-0.6650, 100.7900],
                 [-0.6650, 100.7750]
             ];
 
-            L.polygon(nagariArea, {
+            L.polygon(desaArea, {
                 color: '#10b981',
                 weight: 2,
                 opacity: 0.8,
                 fillColor: '#10b981',
                 fillOpacity: 0.1
             }).addTo(map).bindPopup(
-                '<div class="p-2"><h3 class="font-bold">Wilayah Nagari Silungkang Oso</h3><p class="text-sm text-gray-600">Area perkiraan batas nagari</p></div>'
-                );
+                '<div class="p-2"><h3 class="font-bold">Wilayah Desa Silungkang Oso</h3><p class="text-sm text-gray-600">Area perkiraan batas desa</p></div>'
+            );
         });
     </script>
 @endpush
